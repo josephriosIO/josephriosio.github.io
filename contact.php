@@ -4,10 +4,10 @@
  */
 
 // an email address that will be in the From field of the email.
-$from = 'Demo contact form <demo@domain.com>';
+$from = ['email'];
 
 // an email address that will receive the email with the output of the form
-$sendTo = 'Demo contact form <josephrios56@gmail.com>';
+$sendTo = 'josephrios56@gmail.com';
 
 // subject of the email
 $subject = 'New message from contact form';
@@ -72,4 +72,4 @@ if (!empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQ
 // else just display the message
 else {
     echo $responseArray['message'];
-}
+}?>
